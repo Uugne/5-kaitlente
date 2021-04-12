@@ -39,12 +39,12 @@ body {
     place-self: center;
 }
 
-.kaitlente > .hot.red {
+.kaitlente > .hot.red:first-child {
     background-color: red;
 }
 
 .kaitlente > .hot:nth-child(n+5) {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 

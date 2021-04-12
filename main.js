@@ -1,7 +1,5 @@
 const selector = '.kaitlente';
-const DOM = document.querySelector(selector);
-const padeliaiDOM = DOM.querySelector('.padeliai');
-const mygtukaiDOM = DOM.querySelector('.mygtukai');
+let DOM = document.querySelector(selector);
 
 const symbols = ['1', '2', '3', '4', '5', '6', '7', '8'];
 
@@ -13,17 +11,17 @@ for (let i = 0; i < symbols.length; i++) {
 
 DOM.insertAdjacentHTML('beforeend', HTML);
 
-const buttons = DOM.querySelectorAll('.hot');
-
-console.log(buttons);
+let buttons = DOM.querySelectorAll('.hot');
 
 for (let i = 0; i < buttons.length; i++) {
-    const btn = buttons[i];
+    let btn = buttons[i];
 
-btn.addEventListener('click', function () {
-    btn.classList.toggle('red');
-});
+    buttons[4].addEventListener('click', function () {
+    buttons[0].classList.add('red')}
+    )
 }
+
+
 
 
 
